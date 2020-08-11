@@ -1,4 +1,5 @@
-**Status:** Archive (code is provided as-is, no updates expected)
+**Status:** Forked by Dereck de Mezquita; this version was made functional and modified for efficiency. Will be integrated into a personal project for later use...
+<!-- **Status:** Archive (code is provided as-is, no updates expected) -->
 
 # gpt-2
 
