@@ -1,5 +1,7 @@
 # Installation
 
+- Note Python 3.6 along with TF 1.12.0 seems to run stably up to the 774M model.
+
 Git clone this repository, and `cd` into directory for remaining commands
 ```
 git clone https://github.com/openai/gpt-2.git && cd gpt-2
