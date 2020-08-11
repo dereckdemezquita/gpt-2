@@ -33,6 +33,14 @@ python3 download_model.py 774M
 python3 download_model.py 1558M
 ```
 
+## Fixing to work with 1.12 sed command
+
+https://github.com/openai/gpt-2/issues/178#issuecomment-551623694
+
+```
+sed -ie s/sort\(/contrib\.framework\.sort\(/g src/sample.py
+```
+
 ## Docker Installation
 
 Build the Dockerfile and tag the created image as `gpt-2`:
@@ -85,4 +93,21 @@ python3 src/interactive_conditional_samples.py --top_k 40
 To check flag descriptions, use:
 ```
 python3 src/interactive_conditional_samples.py -- --help
+```
+
+## Custom commands
+
+```
+python3 src/interactive_conditional_samples.py --top_k 40 --model_name=774M
+```
+
+```
+python3 -c 'import tensorflow as tf; print(tf.__version__)'
+```
+
+
+## Watch GPU usage
+
+```
+watch -d -n 0.5 nvidia-smi
 ```
