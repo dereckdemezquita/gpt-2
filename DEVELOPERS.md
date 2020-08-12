@@ -113,3 +113,13 @@ python3 -c 'import tensorflow as tf; print(tf.__version__)'
 ```
 watch -d -n 0.5 nvidia-smi
 ```
+
+## Debugging
+
+If you're having issues with the CUDA connection to the GPU; which will happen when not using CUDA v9. CUDA v11 works but you have to modify the path:
+
+```
+echo $LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64
+```
+
