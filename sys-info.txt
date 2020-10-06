@@ -1,0 +1,438 @@
+ubuntu-server
+    description: Desktop Computer
+    product: H310MS2P (Default string)
+    vendor: Gigabyte Technology Co., Ltd.
+    version: Default string
+    serial: Default string
+    width: 64 bits
+    capabilities: smbios-3.1.1 dmi-3.1.1 smp vsyscall32
+    configuration: boot=normal chassis=desktop family=Default string sku=Default string uuid=E002D503-5E04-9505-C906-270700080009
+  *-core
+       description: Motherboard
+       product: H310M S2P
+       vendor: Gigabyte Technology Co., Ltd.
+       physical id: 0
+       version: x.x
+       serial: Default string
+       slot: Default string
+     *-firmware
+          description: BIOS
+          vendor: American Megatrends Inc.
+          physical id: 0
+          version: F3
+          date: 06/14/2018
+          size: 64KiB
+          capacity: 16MiB
+          capabilities: pci upgrade shadowing cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int14serial int17printer acpi usb biosbootspecification uefi
+     *-memory
+          description: System Memory
+          physical id: 3a
+          slot: System board or motherboard
+          size: 16GiB
+        *-bank:0
+             description: DIMM DDR4 Synchronous 2133 MHz (0.5 ns)
+             product: CT8G4DFD8213.C16FBD2
+             vendor: 859B
+             physical id: 0
+             serial: 14EA7D56
+             slot: ChannelA-DIMM0
+             size: 8GiB
+             width: 64 bits
+             clock: 2133MHz (0.5ns)
+        *-bank:1
+             description: [empty]
+             physical id: 1
+             slot: ChannelA-DIMM1
+        *-bank:2
+             description: DIMM DDR4 Synchronous 2133 MHz (0.5 ns)
+             product: CT8G4DFD8213.C16FBD2
+             vendor: 859B
+             physical id: 2
+             serial: 14EA7D55
+             slot: ChannelB-DIMM0
+             size: 8GiB
+             width: 64 bits
+             clock: 2133MHz (0.5ns)
+        *-bank:3
+             description: [empty]
+             physical id: 3
+             slot: ChannelB-DIMM1
+     *-cache:0
+          description: L1 cache
+          physical id: 44
+          slot: L1 Cache
+          size: 256KiB
+          capacity: 256KiB
+          capabilities: synchronous internal write-back unified
+          configuration: level=1
+     *-cache:1
+          description: L2 cache
+          physical id: 45
+          slot: L2 Cache
+          size: 1MiB
+          capacity: 1MiB
+          capabilities: synchronous internal write-back unified
+          configuration: level=2
+     *-cache:2
+          description: L3 cache
+          physical id: 46
+          slot: L3 Cache
+          size: 6MiB
+          capacity: 6MiB
+          capabilities: synchronous internal write-back unified
+          configuration: level=3
+     *-cpu
+          description: CPU
+          product: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+          vendor: Intel Corp.
+          physical id: 47
+          bus info: cpu@0
+          version: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+          serial: To Be Filled By O.E.M.
+          slot: U3E1
+          size: 3585MHz
+          capacity: 4005MHz
+          width: 64 bits
+          clock: 100MHz
+          capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d cpufreq
+          configuration: cores=4 enabledcores=4 threads=4
+     *-pci
+          description: Host bridge
+          product: 8th Gen Core 4-core Desktop Processor Host Bridge/DRAM Registers [Coffee Lake S]
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 08
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=skl_uncore
+          resources: irq:0
+        *-pci:0
+             description: PCI bridge
+             product: Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16)
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 08
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pm msi pciexpress normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:121 ioport:4000(size=4096) memory:a0000000-a30fffff ioport:90000000(size=268435456)
+           *-display
+                description: VGA compatible controller
+                product: GP106 [GeForce GTX 1060 6GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress vga_controller bus_master cap_list rom
+                configuration: driver=nvidia latency=0
+                resources: irq:129 memory:a2000000-a2ffffff memory:90000000-9fffffff memory:a0000000-a1ffffff ioport:4000(size=128) memory:c0000-dffff
+           *-multimedia
+                description: Audio device
+                product: GP106 High Definition Audio Controller
+                vendor: NVIDIA Corporation
+                physical id: 0.1
+                bus info: pci@0000:01:00.1
+                version: a1
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=snd_hda_intel latency=0
+                resources: irq:17 memory:a3080000-a3083fff
+        *-generic
+             description: Signal processing controller
+             product: Cannon Lake PCH Thermal Controller
+             vendor: Intel Corporation
+             physical id: 12
+             bus info: pci@0000:00:12.0
+             version: 10
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi cap_list
+             configuration: driver=intel_pch_thermal latency=0
+             resources: irq:16 memory:a331d000-a331dfff
+        *-usb
+             description: USB controller
+             product: Cannon Lake PCH USB 3.1 xHCI Host Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 10
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:124 memory:a3300000-a330ffff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 5.4.0-42-generic xhci-hcd
+                physical id: 0
+                bus info: usb@1
+                logical name: usb1
+                version: 5.04
+                capabilities: usb-2.00
+                configuration: driver=hub slots=16 speed=480Mbit/s
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 5.4.0-42-generic xhci-hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 5.04
+                capabilities: usb-3.10
+                configuration: driver=hub slots=4 speed=10000Mbit/s
+        *-memory UNCLAIMED
+             description: RAM memory
+             product: Cannon Lake PCH Shared SRAM
+             vendor: Intel Corporation
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 10
+             width: 64 bits
+             clock: 33MHz (30.3ns)
+             capabilities: pm cap_list
+             configuration: latency=0
+             resources: memory:a3316000-a3317fff memory:a331c000-a331cfff
+        *-communication
+             description: Communication controller
+             product: Cannon Lake PCH HECI Controller
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 10
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: irq:127 memory:a331b000-a331bfff
+        *-sata
+             description: SATA controller
+             product: Cannon Lake PCH SATA AHCI Controller
+             vendor: Intel Corporation
+             physical id: 17
+             bus info: pci@0000:00:17.0
+             logical name: scsi0
+             logical name: scsi2
+             version: 10
+             width: 32 bits
+             clock: 66MHz
+             capabilities: sata msi pm ahci_1.0 bus_master cap_list emulated
+             configuration: driver=ahci latency=0
+             resources: irq:125 memory:a3314000-a3315fff memory:a331a000-a331a0ff ioport:5050(size=8) ioport:5040(size=4) ioport:5020(size=32) memory:a3319000-a33197ff
+           *-disk:0
+                description: ATA Disk
+                product: SanDisk SSD PLUS
+                physical id: 0
+                bus info: scsi@0:0.0.0
+                logical name: /dev/sda
+                version: 00RL
+                serial: 183335806491
+                size: 111GiB (120GB)
+                capabilities: gpt-1.00 partitioned partitioned:gpt
+                configuration: ansiversion=5 guid=54f474ff-9207-4b06-a92b-537406c8cfee logicalsectorsize=512 sectorsize=512
+              *-volume:0
+                   description: Windows FAT volume
+                   vendor: mkfs.fat
+                   physical id: 1
+                   bus info: scsi@0:0.0.0,1
+                   logical name: /dev/sda1
+                   logical name: /boot/efi
+                   version: FAT32
+                   serial: e4cf-2bc9
+                   size: 510MiB
+                   capacity: 511MiB
+                   capabilities: boot fat initialized
+                   configuration: FATs=2 filesystem=fat mount.fstype=vfat mount.options=rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro state=mounted
+              *-volume:1
+                   description: EXT4 volume
+                   vendor: Linux
+                   physical id: 2
+                   bus info: scsi@0:0.0.0,2
+                   logical name: /dev/sda2
+                   logical name: /
+                   version: 1.0
+                   serial: c401e7f9-c518-406b-b94e-58618fe1f680
+                   size: 111GiB
+                   capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                   configuration: created=2020-05-21 23:27:11 filesystem=ext4 lastmountpoint=/ modified=2020-05-21 23:30:27 mount.fstype=ext4 mount.options=rw,relatime mounted=2020-08-29 14:38:34 state=mounted
+           *-disk:1
+                description: EXT3 volume
+                product: TOSHIBA MK3265GS
+                vendor: Linux
+                physical id: 1
+                bus info: scsi@2:0.0.0
+                logical name: /dev/sdb
+                version: 1.0
+                serial: 0705c007-2f89-4d94-9c2c-10cbe5f17455
+                size: 298GiB
+                capabilities: journaled extended_attributes large_files ext3 ext2 initialized
+                configuration: ansiversion=5 created=2019-06-01 22:58:54 filesystem=ext3 logicalsectorsize=512 modified=2020-05-21 23:16:35 mounted=2020-05-20 05:54:02 sectorsize=512 state=clean
+        *-pci:1
+             description: PCI bridge
+             product: Cannon Lake PCH PCI Express Root Port #5
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: f0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:122
+           *-pci
+                description: PCI bridge
+                product: IT8892E PCIe to PCI Bridge
+                vendor: Integrated Technology Express, Inc.
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                version: 71
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pci pm subtractive_decode bus_master cap_list
+        *-pci:2
+             description: PCI bridge
+             product: Cannon Lake PCH PCI Express Root Port #8
+             vendor: Intel Corporation
+             physical id: 1c.7
+             bus info: pci@0000:00:1c.7
+             version: f0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:123 ioport:3000(size=4096) memory:a3200000-a32fffff
+           *-network
+                description: Ethernet interface
+                product: RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
+                vendor: Realtek Semiconductor Co., Ltd.
+                physical id: 0
+                bus info: pci@0000:04:00.0
+                logical name: enp4s0
+                version: 16
+                serial: e0:d5:5e:95:c9:27
+                size: 1Gbit/s
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress msix bus_master cap_list ethernet physical tp mii 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=r8169 duplex=full firmware=rtl8168h-2_0.0.2 02/26/15 ip=10.0.0.3 latency=0 link=yes multicast=yes port=MII speed=1Gbit/s
+                resources: irq:19 ioport:3000(size=256) memory:a3204000-a3204fff memory:a3200000-a3203fff
+        *-isa
+             description: ISA bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 10
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-multimedia
+             description: Audio device
+             product: Cannon Lake PCH cAVS
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 10
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=snd_hda_intel latency=32
+             resources: irq:128 memory:a3310000-a3313fff memory:a3100000-a31fffff
+        *-serial:0
+             description: SMBus
+             product: Cannon Lake PCH SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.4
+             bus info: pci@0000:00:1f.4
+             version: 10
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: irq:16 memory:a3318000-a33180ff ioport:efa0(size=32)
+        *-serial:1 UNCLAIMED
+             description: Serial bus controller
+             product: Cannon Lake PCH SPI Controller
+             vendor: Intel Corporation
+             physical id: 1f.5
+             bus info: pci@0000:00:1f.5
+             version: 10
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: memory:fe010000-fe010fff
+     *-pnp00:00
+          product: PnP device PNP0c02
+          physical id: 1
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:01
+          product: PnP device PNP0400
+          physical id: 2
+          capabilities: pnp
+          configuration: driver=parport_pc
+     *-pnp00:02
+          product: PnP device PNP0501
+          physical id: 3
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:03
+          product: PnP device PNP0501
+          physical id: 4
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:04
+          product: PnP device PNP0c02
+          physical id: 5
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:05
+          product: PnP device PNP0b00
+          physical id: 6
+          capabilities: pnp
+          configuration: driver=rtc_cmos
+     *-pnp00:06
+          product: PnP device INT3f0d
+          physical id: 7
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:07
+          product: PnP device PNP0c02
+          physical id: 8
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:08
+          product: PnP device PNP0c02
+          physical id: 9
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:09
+          product: PnP device PNP0c02
+          physical id: a
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:0a
+          product: PnP device PNP0c02
+          physical id: b
+          capabilities: pnp
+          configuration: driver=system
+  *-power UNCLAIMED
+       description: To Be Filled By O.E.M.
+       product: To Be Filled By O.E.M.
+       vendor: To Be Filled By O.E.M.
+       physical id: 1
+       version: To Be Filled By O.E.M.
+       serial: To Be Filled By O.E.M.
+       capacity: 32768mWh
+  *-network
+       description: Ethernet interface
+       physical id: 2
+       logical name: docker0
+       serial: 02:42:75:f0:89:93
+       capabilities: ethernet physical
+       configuration: broadcast=yes driver=bridge driverversion=2.3 firmware=N/A ip=172.17.0.1 link=no multicast=yes

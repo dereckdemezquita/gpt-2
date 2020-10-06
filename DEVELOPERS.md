@@ -96,30 +96,3 @@ To check flag descriptions, use:
 ```
 python3 src/interactive_conditional_samples.py -- --help
 ```
-
-## Custom commands
-
-```
-python3 src/interactive_conditional_samples.py --top_k 40 --model_name=774M
-```
-
-```
-python3 -c 'import tensorflow as tf; print(tf.__version__)'
-```
-
-
-## Watch GPU usage
-
-```
-watch -d -n 0.5 nvidia-smi
-```
-
-## Debugging
-
-If you're having issues with the CUDA connection to the GPU; which will happen when not using CUDA v9. CUDA v11 works but you have to modify the path:
-
-```
-echo $LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64
-```
-
